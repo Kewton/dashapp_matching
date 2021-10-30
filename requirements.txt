@@ -1,0 +1,15 @@
+notebook>=5.3
+ipywidgets>=7.2
+jupyterlab<3.0.0
+pandas
+plotly==4.10.0
+dash==1.15
+dash-daq==0.5.0
+dash-bio==0.4.8
+dash-canvas==0.1.0
+dash-auth==1.4.1
+dash-cytoscape==0.2.0
+networkx==2.5
+jupyter-dash==0.4.0
+dash_bootstrap_components==0.13.1
+xlrd>=1.0,<2.0
