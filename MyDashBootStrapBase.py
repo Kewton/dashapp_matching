@@ -8,7 +8,7 @@ class MyDashBootStrapBase(Dash):
       self.title = _title
     self.__setlayout()
     #self.run_server(debug=True, port=_port)
-    self.run_server(debug=True)
+    #self.run_server(debug=True)
   
   def __setlayout(self):
       self.layout = self.buildbaselayout()

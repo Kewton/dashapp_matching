@@ -1,7 +1,7 @@
 from MyDashCytoscape import MyDashCytoscape
 
-def main():
-    MyDashCytoscape("*** matching ***")
+app = MyDashCytoscape("*** matching ***")
+server = app.server
 
 if __name__ == "__main__":
-    main()
+    app.run_server(debug=True)
