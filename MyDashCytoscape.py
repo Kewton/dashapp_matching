@@ -72,7 +72,7 @@ class MyDashCytoscape(MyDashBootStrapBase):
         prevent_initial_call=True,
     )
     def upload_nodedef(contents, filename):
-        print("upload_nodedef")
+        print("■ upload_nodedef")
         self._df_nodedef = parse_content(contents, filename)
         print(self._df_nodedef.info())
         return [f"ノード属性ファイル：{filename}"]
@@ -86,7 +86,9 @@ class MyDashCytoscape(MyDashBootStrapBase):
         prevent_initial_call=True,
     )
     def upload_edge0to1(contents, filename):
+        print("■ upload_edge0to1")
         self._df_edge0to1 = parse_content(contents, filename)
+        print(self._df_edge0to1.info())
         return [f"エッジリスト_0to1ファイル：{filename}"]
 
     @app.callback(
@@ -98,7 +100,9 @@ class MyDashCytoscape(MyDashBootStrapBase):
         prevent_initial_call=True,
     )
     def upload_edge1to0(contents, filename):
+        print("■ upload_edge1to0")
         self._df_edge1to0 = parse_content(contents, filename)
+        print(self._df_edge1to0.info())
         return [f"エッジリスト_1to0ファイル：{filename}"]
 
     @app.callback(
