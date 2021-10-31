@@ -1,7 +1,7 @@
 from MyDashCytoscape import MyDashCytoscape
 
 def main():
-    MyDashCytoscape("*** matching ***", 8881)
+    MyDashCytoscape("*** matching ***")
 
 if __name__ == "__main__":
     main()
