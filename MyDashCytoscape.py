@@ -119,6 +119,7 @@ class MyDashCytoscape(MyDashBootStrapBase):
             new_layout=drawCytoscape(self._df_nodedef, self._df_edge0to1, self._df_edge1to0)
             return "success!", [new_layout]
         except Exception as e:
+            print("--- Error ---")
             print(e)
             return "File format is incorrect", []
         
